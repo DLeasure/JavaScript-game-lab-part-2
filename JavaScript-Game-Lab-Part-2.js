@@ -46,7 +46,8 @@ function startCombat() {
         if (nextAction === "attack") {
             continue;
         } else {
-            console.log("You have chosen to give up.");
+            alert("You have chosen to give up.");
+            console.log("User knew winning was incomprehensible.");
             break;
         }
     }
