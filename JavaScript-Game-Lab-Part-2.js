@@ -52,7 +52,7 @@ function startCombat() {
     }
 }
 
-// startGame();
+startGame();
 
 
 
@@ -89,13 +89,13 @@ function testCombat() {
     }
 }
 
-matchNum = 1;
-userLost = 0;
-while (userLost < 1) {
-    console.log("Match: " + matchNum);
-    testCombat();
-    matchNum++;
-    userHealth = 40;
-    grantHealth = 10;
-    userWins = 0;
-}
+// matchNum = 1;
+// userLost = 0;
+// while (userLost < 1) {
+//     console.log("Match: " + matchNum);
+//     testCombat();
+//     matchNum++;
+//     userHealth = 40;
+//     grantHealth = 10;
+//     userWins = 0;
+// }
