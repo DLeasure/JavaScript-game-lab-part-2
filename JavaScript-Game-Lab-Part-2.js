@@ -14,12 +14,12 @@ function startGame() {
             let reallySure = prompt("Are you really sure you want to do play, Jonah?");
             if (reallySure === "yes" || reallySure === "Yes"){
                 alert("You don't want to do that Jonah.");
-            } else if (reallySure === "Yes I'm sure. You're going down!") {
             } else {
             alert("Smart thinking. That would have been a mistake. The mighty Chirpus is unbeatable.")
             }
-        }
+        } else {
         startCombat();
+        }
     }
 }
 
