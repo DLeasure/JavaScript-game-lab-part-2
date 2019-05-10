@@ -30,9 +30,7 @@ function startCombat() {
         grantHealth -= healthDecrement;
         console.log(`Health: ${userName} ${userHealth} - ${grantHealth} Grant`);
         if (grantHealth < 1) {
-            userWins++;
-            console.log(`${userName} has won game ${userWins}!`);
-            grantHealth = 10;
+            userWonGame();
         }
         if (userHealth < 1) {
             console.log(`${userName} has lost the game!`);
@@ -51,6 +49,12 @@ function startCombat() {
             break;
         }
     }
+}
+
+function userWonGame() {
+    userWins++;
+    console.log(`${userName} has won game ${userWins}!`);
+    grantHealth = 10;
 }
 
 startGame();
